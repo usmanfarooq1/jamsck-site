@@ -3,6 +3,10 @@ title: About this page for you
 layout : base.njk
 ---
 <div class="container">
-    <h1>This page is for you</h1>
-    <p>this website is created by using html css and javascript using eleventy ssg</p>
-  </div>
+  <h1>This page is for you</h1>
+  <p>this website is created by using html css and javascript using eleventy ssg</p>
+</div>
+
+{% for item in news %}
+  <a href="/{{item.country}}">{{item.country}}</a> |
+{%endfor%}
